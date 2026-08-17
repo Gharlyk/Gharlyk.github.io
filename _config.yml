@@ -1,0 +1,41 @@
+title: Charly — Projects & Notes
+description: >-
+  A workshop log of things I build, mostly with Claude Code — code, writeups,
+  and notes for anyone working on similar problems.
+baseurl: ""
+url: "https://gharlyk.github.io"
+
+theme: minima
+
+author:
+  name: Charly
+  github: Gharlyk
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Minima theme nav
+minima:
+  nav_pages:
+    - about.md
+    - projects.md
