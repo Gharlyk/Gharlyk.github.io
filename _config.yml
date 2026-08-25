@@ -1,15 +1,11 @@
-title: Charly — Projects & Notes
+title: Projects & Notes
 description: >-
-  A workshop log of things I build, mostly with Claude Code — code, writeups,
-  and notes for anyone working on similar problems.
+  A workshop log of things I build, maybe that could help anyone facing the
+  same challenges 😉
 baseurl: ""
 url: "https://gharlyk.github.io"
 
 theme: minima
-
-author:
-  name: Charly
-  github: Gharlyk
 
 # Collections
 collections:
