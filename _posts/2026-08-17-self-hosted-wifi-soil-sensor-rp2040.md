@@ -7,6 +7,8 @@ project_repo: https://github.com/Gharlyk/Humidity-Sensor
 excerpt: "Migrating 20 versions of an Arduino sketch to PlatformIO, making sensor sampling non-blocking, and debugging a string of bugs that only existed once earlier ones were fixed."
 ---
 
+> **Update (25 Aug 2026):** the "what's next" items below are done — calibration now persists across reboots, and MQTT and WiFi reconnect handling are in. Getting persistence working turned out to be its own story: it was blocked by an 8KB flash limit I didn't know existed, and the documented fix didn't work. That's written up separately in [The Mbed KVStore Default That Silently Broke My Flash Persistence]({% post_url 2026-08-25-mbed-kvstore-default-broke-flash-persistence %}).
+
 ## The problem
 
 I had a soil moisture and temperature sensor project — an Arduino Nano RP2040 Connect reading a capacitive moisture sensor and its onboard IMU for temperature, serving both over a small web UI with a WiFi setup portal and a calibration flow. It worked, mostly, but it had grown across 20 incrementally-versioned Arduino IDE sketches (V0 through V1.8.2), had no automated tests, and — most importantly — blocked the entire device for 30 seconds every time it took a moisture reading. During that window the web server couldn't respond to anything.
