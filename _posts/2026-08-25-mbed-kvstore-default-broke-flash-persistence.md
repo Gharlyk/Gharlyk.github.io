@@ -134,4 +134,4 @@ There's also one loose thread I noted and chose not to chase: on the very first 
 
 ---
 
-*Code: [github.com/Gharlyk/Humidity-Sensor](https://github.com/Gharlyk/Humidity-Sensor) · Built with [Claude Code](https://claude.com/claude-code)*
+*Code: [github.com/Gharlyk/Humidity-Sensor](https://github.com/Gharlyk/Humidity-Sensor)*

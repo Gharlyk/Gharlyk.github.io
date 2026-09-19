@@ -57,4 +57,4 @@ Calibration values currently reset to hardcoded defaults on every reboot instead
 
 ---
 
-*Code: [github.com/Gharlyk/Humidity-Sensor](https://github.com/Gharlyk/Humidity-Sensor) · Built with [Claude Code](https://claude.com/claude-code)*
+*Code: [github.com/Gharlyk/Humidity-Sensor](https://github.com/Gharlyk/Humidity-Sensor)*
